@@ -1,16 +1,17 @@
 document.addEventListener('DOMContentLoaded', e => {
   clickHamburguer()
+  initResize(window)
 })
 
 window.addEventListener('resize', e => {
-  changeClasesResize(e)
+  initResize(e.currentTarget)
 })
 
-function changeClasesResize(event) {
-  if (event.currentTarget.innerWidth < 992) {
+function initResize(param) {
+  if (param.innerWidth < 992) {
     document.getElementById('menuID').classList.add('menu')
   } else {
-    if (event.currentTarget.innerWidth >= 992) {
+    if (param.innerWidth >= 992) {
       closeMenu(document.getElementById('hamburger'))
       document.getElementById('menuID').classList.remove('menu', 'menu--active')
     }
