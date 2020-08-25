@@ -22,81 +22,112 @@
     <title>Frontend Mentor | Insure landing page</title>
   </head>
   <body>
-    <header>
-      <div class="logo wrapper">
+    <header class="wrapper">
+      <div class="logo">
         <img
           id="logo"
-          class="img-logo"
+          class="logo__img"
           src="./images/logo.svg"
           alt="insure-logo"
         />
+      </div>
+      <div class="hamburger">
         <img
+          class="hamburger__logo"
           id="hamburger"
           data-on="false"
           src="./images/icon-hamburger.svg"
           alt="hamburguer-icon"
         />
       </div>
-      <nav id="menu" class="d-none">
-        <ul>
-          <li><a class="nav-link" href="#">HOW WE WORK</a></li>
-          <li><a class="nav-link" href="#">BLOG</a></li>
-          <li><a class="nav-link" href="#">ACCOUNT</a></li>
-          <li><a class="nav-link btn-remarked" href="#">VIEW PLANS</a></li>
-        </ul>
-        <img src="./images/bg-pattern-mobile-nav.svg" alt="" />
-      </nav>
+      <div id="menuID">
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__list-item"><a href="#">HOW WE WORK</a></li>
+            <li class="menu__list-item"><a href="#">BLOG</a></li>
+            <li class="menu__list-item"><a href="#">ACCOUNT</a></li>
+            <li class="menu__list-item item--remarked-nav">
+              <a href="#"
+                >VIEW PLANS</a
+              >
+            </liclass=item--remarked-nav>
+          </ul>
+        </nav>
+        <img class="menu-img" src="./images/bg-pattern-mobile-nav.svg" alt="" />
+      </div>
     </header>
-    <section>
-      <img src="./images/image-intro-mobile.jpg" alt="image-mobile-family" />
-      <div class="wrapper">
-        <div class="title">
-          <h1>Humanizing your insurance.</h1>
-          <p>
-            Get yout life insurance coverage easier and faster. We blend our
-            expertise and technology to help you find the pkan that's right for
-            you. Ensure you and your loved ones are protected
+    <section class="humanizing">
+      <img
+        class="humanizing__img"
+        src="./images/image-intro-mobile.jpg"
+        alt="image-mobile-family"
+      />
+      <div class="humanizing__container">
+        <img
+          class="img-intro-left"
+          src="./images/bg-pattern-intro-left-mobile.svg"
+          alt="intro-left"
+        /><img
+          class="img-intro-right"
+          src="./images/bg-pattern-intro-right-mobile.svg"
+          alt="intro-right"
+        />
+        <div class="text">
+          <h1 class="text__title">
+            Humanizing <br />
+            your insurance.
+          </h1>
+          <p class="text__element">
+            Get yout life insurance coverage easier and <br />
+            faster. We blend our expertise and <br />
+            technology to help you find the pkan that's <br />
+            right for you. Ensure you and your loved <br />
+            ones are protected
           </p>
-          <a href="#">VIEW PLANS</a>
+          <div class="text__link">
+            <a href="#" class="item--remarked">VIEW PLANS</a>
+          </div>
         </div>
       </div>
     </section>
-    <section>
+    <section class="section-diferent">
       <div class="wrapper">
         <h2>We're different</h2>
-        <article>
-          <img src="./images/icon-snappy-process.svg" alt="snappy-process" />
-          <h3>Snappy Process</h3>
-          <p>
-            Our application process can be completed in minutes, not hours.
-            Don't get stuck filling in tedious forms.
-          </p>
-        </article>
-        <article>
-          <img
-            src="./images/icon-affordable-prices.svg"
-            alt="affortable-prices"
-          />
-          <h3>Affortable Prices</h3>
-          <p>
-            We don't want you worrying about high monthly costs. Our prices may
-            be low, but we still offter the best coverage possible.
-          </p>
-        </article>
-        <article>
-          <img src="./images/icon-people-first.svg" alt="people-first" />
-          <h3>People First</h3>
-          <p>
-            Our plans aren't full of conditions and clauses to prevent payouts.
-            We make sure you're covered when you need it.
-          </p>
-        </article>
+        <div class="grid-diferent">
+          <article>
+            <img src="./images/icon-snappy-process.svg" alt="snappy-process" />
+            <h3>Snappy Process</h3>
+            <p>
+              Our application process can be completed in minutes, not hours.
+              Don't get stuck filling in tedious forms.
+            </p>
+          </article>
+          <article>
+            <img
+              src="./images/icon-affordable-prices.svg"
+              alt="affortable-prices"
+            />
+            <h3>Affortable Prices</h3>
+            <p>
+              We don't want you worrying about high monthly costs. Our prices
+              may be low, but we still offter the best coverage possible.
+            </p>
+          </article>
+          <article>
+            <img src="./images/icon-people-first.svg" alt="people-first" />
+            <h3>People First</h3>
+            <p>
+              Our plans aren't full of conditions and clauses to prevent
+              payouts. We make sure you're covered when you need it.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
-    <section>
+    <section class="section-find">
       <div class="wrapper">
         <h2>Find out more about how we work</h2>
-        <a href="#">HOW WE WORK</a>
+        <a class="btn-remarked" href="#">HOW WE WORK</a>
       </div>
     </section>
     <section>
