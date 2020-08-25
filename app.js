@@ -10,10 +10,16 @@ window.addEventListener('resize', e => {
 function initResize(param) {
   if (param.innerWidth < 992) {
     document.getElementById('menuID').classList.add('menu')
+    document
+      .querySelector('.humanizing__img')
+      .setAttribute('src', './images/image-intro-mobile.jpg')
   } else {
     if (param.innerWidth >= 992) {
       closeMenu(document.getElementById('hamburger'))
       document.getElementById('menuID').classList.remove('menu', 'menu--active')
+      document
+        .querySelector('.humanizing__img')
+        .setAttribute('src', './images/image-intro-desktop.jpg')
     }
   }
 }
